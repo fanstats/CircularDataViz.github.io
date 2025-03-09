@@ -1,0 +1,37 @@
+---
+title: "3D Grouped Circular Boxplot for Temporal Angular Data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F,message = F,warning = F)
+```
+
+```{r, fig.show='hide'}
+source("3dGroupedCircularBoxplot.R")
+```
+
+##### Interactive viewpoint navigation
+* Rotation: Click and hold with the left mouse button, then drag the plot to rotate it and gain different perspectives.
+* Resize: Zoom in and out with the scroll wheel, or the right mouse button.
+
+##### Temporal distribution of wind direction in 2023 in Ames, Iowa.
+```{r, fig.show='hide'}
+load("ames-wind.rda")
+GroupedCircularBoxplot.3D(
+    rolling_weeks, shrink = 1, draw_arrow = FALSE, minimal=T,
+    plot_cols = colorRampPalette(RColorBrewer::brewer.pal(name = "Blues", n = 9)[4:9])(49), line_cols = rep(1, 49), template = "geographics",lwd = 4)
+rgl::rgl.viewpoint(zoom = 0.6)
+rgl::rglwidget()
+```
+
+##### Temporal distribution of wind direction in 2023 in Jamshedpur, India.
+```{r, fig.show='hide'}
+load("vejs-wind.rda")
+GroupedCircularBoxplot.3D(
+    rolling_weeks, shrink = 1, draw_arrow = FALSE, minimal=T,
+    plot_cols = colorRampPalette(RColorBrewer::brewer.pal(name = "Blues", n = 9)[4:9])(49), line_cols = rep(1, 49), template = "geographics",lwd = 4)
+rgl::rgl.viewpoint(zoom = 0.6)
+rgl::rglwidget()
+```
+

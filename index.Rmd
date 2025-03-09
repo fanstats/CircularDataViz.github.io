@@ -1,0 +1,19 @@
+---
+title: "Description"
+---
+
+This site presents 3D visualization of grouped circular boxplots. Software reference link: [GroupedCircularBoxplot](https://github.com/jdberlinski/GroupedCircularBoxplot).
+
+### Visualizations
+
+This page contains a navigation bar on the left for accessing real data applications.
+
+(Warning: The loading time for the Visualizations page could be long.)
+
+### Instructions for interactive views
+
+The 3D interactive plots are implemented with the `rgl` functions and here are instructions for manipulation:
+
+- Rotation: Click and hold with the left mouse button, then drag the plot to rotate it and gain different perspectives.
+
+- Resize: Zoom in and out with the scroll wheel, or the right mouse button.

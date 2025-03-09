@@ -1,0 +1,15 @@
+name: GroupedCircularBoxplot
+output_dir: "docs"
+navbar:
+  title: "Grouped Circular Boxplot Visualization"
+  left:
+    - text: "Description"
+      href: index.html
+    - text: "Wind Direction Data"
+      href: 3D-displays-wind-direction.html
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: cosmo
