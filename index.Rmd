@@ -6,7 +6,7 @@ This site presents 3D visualization of grouped circular boxplots. Software refer
 
 ### Visualizations
 
-This page contains a navigation bar on the left for accessing real data applications.
+This page contains a navigation bar on the top for accessing real data applications.
 
 (Warning: The loading time for the Visualizations page could be long.)
 
